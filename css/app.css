@@ -14,6 +14,7 @@ header{
     --main-background-color: #F6F5F3;
     --main-title-color: #4E3969;
     --subtitle-color: #A599A5 ;
+    --footer-color: #7C69A4;
 
 }
 /* RESET RULES */
@@ -124,6 +125,7 @@ main{
     border-radius: 999px;
     background-color: var(--white);
 }
+/* PRESENTATION SECTION STYLE*/
 .presentation-title{
     font-size: 30px;
     text-transform: uppercase;
@@ -144,6 +146,27 @@ main{
 .presentation-text{
     line-height: 35px;
 }
+/* FOOTER STYLE */
+.info-section{
+    background-color:var(--footer-color);
+    color: var(--white);
+    padding: 30px;
+}
+.info-section .row{
+    justify-content: space-between;
+    align-items: center;
+}
+.info-section .policy-link{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px
+}
+.policy-link a{
+    text-decoration: underline;
+}
+.business-name{
+    margin-bottom: 10px;
+}
 /* MEDIA QUERIES */
 @media (max-width: 992px) {
     /* hero */
@@ -163,6 +186,17 @@ main{
     }
     .social-section .col-20{
         flex-grow: 1;
+    }
+    .info-section .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .business-info{
+        text-align: center;
+    }
+    .business-address{
+        margin-bottom: 15px;
     }
         
 }
