@@ -7,6 +7,11 @@ header{
     font-family: "Nerko One", cursive;
 
 }
+/* CUSTOM PROPIETIES */
+:root{
+    --brand-color: #FF9614;
+    --white: #ffffff;
+}
 /* RESET RULES */
 *{
     box-sizing: border-box;
@@ -21,3 +26,33 @@ a{
     text-decoration: none;
 }
 /* LAYOUT */
+.container-full{
+    max-width: 100%;
+    margin: 0;
+}
+.container{
+    max-width: 1485px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+/* HEADER STYLE */
+.main-header{
+    background-color:var(--white);
+
+}
+.logo{
+    font-size: 55px;
+    color: var(--brand-color);
+    text-transform: uppercase;
+    padding: 10px;
+}
+/* MEDIA QUERIES */
+@media (max-width: 992px) {
+
+}
+@media (max-width: 767px) {
+    /* navbar */
+    .navbar{
+        text-align: center;
+    }
+}
